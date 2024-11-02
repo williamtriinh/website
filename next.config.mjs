@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withContentlayer } from "next-contentlayer2"
 
-export default nextConfig;
+export default withContentlayer({
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.gr-assets.com"
+      }
+    ]
+  }
+});
