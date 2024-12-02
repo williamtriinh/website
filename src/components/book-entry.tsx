@@ -13,7 +13,12 @@ export function BookEntry({ book }: BookEntryProps) {
   return (
     <div className="flex gap-4">
       <div className="relative h-[120px] w-[80px] min-w-[80px]">
-        <Image src={book.image} alt="" fill />
+        <Image
+          src={book.image}
+          alt={`A book cover of ${book.title}`}
+          fill
+          className="rounded-sm"
+        />
       </div>
       <div className="flex flex-col">
         <Link
