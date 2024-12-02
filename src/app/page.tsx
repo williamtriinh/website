@@ -3,6 +3,7 @@
 import type { Book } from "@/types";
 import { fetchCurrentBooks, fetchPastBooks } from "./actions";
 import { BookEntry } from "@/components/book-entry";
+import Link from "next/link";
 
 export default async function RootPage() {
   const currentBooks = await fetchCurrentBooks();
@@ -11,9 +12,15 @@ export default async function RootPage() {
   return (
     <div className="flex flex-col gap-y-4">
       <p className="text-muted-foreground">
-        Hi, I'm William. I'm a software developer who enjoys running, reading,
-        playing chess (though I'm not very good at it), and playing video games.
-        I sometimes write code too.
+        Hi, I'm William. I'm a software developer who enjoys running,&nbsp;
+        <Link
+          href={`https://goodreads.com/user/show/${process.env.GOODREADS_USER_ID}`}
+          className="text-foreground underline"
+        >
+          reading
+        </Link>
+        , playing chess (though I'm not very good at it), and playing video
+        games. I sometimes write code too.
       </p>
       <CurrentBooks books={currentBooks} />
       <PastBooks books={pastBooks} />
