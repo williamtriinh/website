@@ -20,23 +20,15 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-[999] mb-[100px] pt-4">
-      <div className="mx-auto w-full max-w-2xl px-5">
+      <div className="mx-auto w-full max-w-2xl">
         <div
           className={cn(
-            "flex w-full items-center justify-between rounded-lg py-4 pl-6 pr-2 transition",
+            "flex w-full items-center justify-between rounded-lg px-6 py-4 transition",
             effectActivated && "shadow-lg outline-white backdrop-blur-md",
           )}
         >
           <ProfileButton />
-          <div className="flex">
-            <Button variant="ghost">
-              <Link href="/posts">Posts</Link>
-            </Button>
-            <Button variant="ghost" asChild>
-              <Link href="/wiki">Wiki</Link>
-            </Button>
-            <ThemeSelector />
-          </div>
+          <ThemeSelector />
         </div>
       </div>
     </nav>
