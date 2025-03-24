@@ -17,7 +17,7 @@ export function BookEntry({ book }: BookEntryProps) {
           src={book.image}
           alt={`A book cover of ${book.title}`}
           fill
-          className="rounded-sm"
+          className="rounded-sm object-contain"
         />
       </div>
       <div className="flex flex-col">
