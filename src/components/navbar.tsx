@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ThemeSelector } from "./theme-selector";
@@ -19,7 +18,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-[999] mb-[100px] pt-4">
+    <nav className="sticky top-0 z-[999] mb-[100px] p-4">
       <div className="mx-auto w-full max-w-2xl">
         <div
           className={cn(
