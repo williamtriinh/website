@@ -80,6 +80,16 @@ export default async function RootPage() {
             </li>
           </ul>
         </ExperienceProjectItem>
+        <ExperienceProjectItem
+          title="Offshore Hires"
+          date="May 2022 - Aug 2023"
+        >
+          <p>
+            An all-in-one platform for connecting freelancers and businesses.
+            The platform offers features that include posting jobs, managing
+            projects, and chat-messaging team members.
+          </p>
+        </ExperienceProjectItem>
         <ExperienceProjectItem title="Pivot" date="Aug 2021 - Mar 2022">
           <p>
             An all-in-one platform for restaurants to schedule employees, manage
@@ -106,7 +116,12 @@ export default async function RootPage() {
         <ExperienceProjectItem
           title="Book With Float"
           date="Jun 2021 - Dec 2021"
-        ></ExperienceProjectItem>
+        >
+          <p>
+            A marketplace-platform for booking and renting out boats.
+            Technologies used includes Ruby on Rails, React, and Stripe
+          </p>
+        </ExperienceProjectItem>
         <ExperienceProjectItem
           title="Ottawa Inner City Health"
           date="May 2020 - Dec 2021"
