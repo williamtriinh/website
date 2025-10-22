@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "William Trinh",
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           "relative flex min-h-screen flex-col overflow-y-auto overflow-x-hidden",
-          inter.className,
+          jetBrainsMono.className,
         )}
       >
         <ThemeProvider
