@@ -16,9 +16,9 @@ export default async function RootPage() {
 
   return (
     <div className="flex flex-col gap-y-4">
-      <h1 className="text-2xl font-black">Hey, I'm William!</h1>
+      <h1 className="text-2xl font-black">Hey, I&apos;m William!</h1>
       <p className="text-muted-foreground">
-        I'm a software developer who enjoys running,&nbsp;
+        I&apos;m a software developer who enjoys running,&nbsp;
         <Link
           href={`https://goodreads.com/user/show/${process.env.GOODREADS_USER_ID}`}
           className="text-foreground underline"
@@ -26,7 +26,7 @@ export default async function RootPage() {
         >
           reading
         </Link>
-        , playing chess (though I'm not very good at it), and playing video
+        , playing chess (though I&apos;m not very good at it), and playing video
         games. I sometimes write code too!
       </p>
       <h1 className="mt-4 text-2xl font-black">Experience</h1>
@@ -41,7 +41,7 @@ export default async function RootPage() {
           applications.
         </p>
         <p>
-          I've worked on numerous client projects as a Full-stack Developer
+          I&apos;ve worked on numerous client projects as a Full-stack Developer
           using a wide-range of technologies including React/React Native,
           NextJS, Ruby on Rails, Flutter, Firebase, PostgreSQL, Github, Docker
           and Cypress.
@@ -76,7 +76,7 @@ export default async function RootPage() {
             <li>Lead the development of the mobile app and backed system</li>
             <li>
               Redesigned Firebase Cloud Functions to significantly enhance the
-              application's overall security and robustness
+              application&apos;s overall security and robustness
             </li>
           </ul>
         </ExperienceProjectItem>
@@ -154,8 +154,8 @@ export default async function RootPage() {
           The Nokia Future Tech Internship is an 8 week program that gives high
           school opportunities to explore tech-related fields. I worked
           alongside a Nokia engineer to develop a Bash program which interfaced
-          with Nokia's Netguard Identity Access Manager (NIAM) via REST API for
-          the purpose of system provisioning, automation, and reporting.
+          with Nokia&apos;s Netguard Identity Access Manager (NIAM) via REST API
+          for the purpose of system provisioning, automation, and reporting.
         </p>
       </ExperienceEntry>
       <ExperienceEntry
@@ -168,8 +168,8 @@ export default async function RootPage() {
           I developed a prototype school news mobile app using React Native and
           Firebase. Essential features such as authentication and the creation,
           publication, and viewing of articles have been implemented. After my
-          co-op, I've also briefly worked on an influencer app as an Android
-          developer.
+          co-op, I&apos;ve also briefly worked on an influencer app as an
+          Android developer.
         </p>
       </ExperienceEntry>
 
@@ -188,7 +188,7 @@ function CurrentBooks({ books }: CurrentBooksProps) {
   if (books.length > 0) {
     return (
       <>
-        <p className="text-muted-foreground">I'm currently reading:</p>
+        <p className="text-muted-foreground">I&apos;m currently reading:</p>
         {books.map((book) => (
           <BookEntry key={book.id} book={book} />
         ))}
@@ -198,7 +198,7 @@ function CurrentBooks({ books }: CurrentBooksProps) {
 
   return (
     <p className="text-muted-foreground">
-      I'm not reading anything at the moment.
+      I&apos;m not reading anything at the moment.
     </p>
   );
 }
@@ -210,7 +210,9 @@ interface PastBooksProps {
 function PastBooks({ books }: PastBooksProps) {
   return (
     <>
-      <p className="text-muted-foreground">The last 3 books I've finished:</p>
+      <p className="text-muted-foreground">
+        The last 3 books I&apos;ve finished:
+      </p>
       {books.map((book) => (
         <BookEntry key={book.id} book={book} />
       ))}

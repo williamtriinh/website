@@ -15,7 +15,7 @@ export function Navbar() {
   React.useEffect(() => {
     document.addEventListener("scroll", handleScrollEvent);
     return () => document.removeEventListener("scroll", handleScrollEvent);
-  }, []);
+  }, [handleScrollEvent]);
 
   return (
     <nav className="sticky top-0 z-[999] mb-[100px] p-4">
