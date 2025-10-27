@@ -18,7 +18,7 @@ export function Navbar() {
   }, [handleScrollEvent]);
 
   return (
-    <nav className="sticky top-0 z-[999] mb-[100px] p-4">
+    <nav className="sticky top-0 z-999 mb-[100px] p-4">
       <div className="mx-auto w-full max-w-2xl">
         <div
           className={cn(

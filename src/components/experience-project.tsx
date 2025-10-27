@@ -4,9 +4,8 @@ import React from "react";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { StringFieldDef } from "contentlayer2/core";
 
-interface ExperienceProjectProps {}
+interface ExperienceProjectProps { }
 
 function ExperienceProject({
   children,
