@@ -10,7 +10,7 @@ export function Rating({ rating }: RatingProps) {
     return <p className="text-muted-foreground">No rating</p>;
   }
 
-  const stars: React.ReactElement[] = [];
+  const stars: React.ReactElement<any>[] = [];
 
   for (let i = 1; i <= 5; i++) {
     stars.push(<Star key={i} filled={rating >= i} />);
