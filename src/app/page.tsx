@@ -9,8 +9,11 @@ import {
   ExperienceProject,
   ExperienceProjectItem,
 } from "@/components/experience-project";
+import { connection } from "next/server";
 
 export default async function RootPage() {
+  await connection();
+
   const currentBooks = await fetchCurrentBooks();
   const pastBooks = await fetchPastBooks();
 
