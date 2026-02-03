@@ -32,6 +32,28 @@ export default async function RootPage() {
         , playing chess (though I&apos;m not very good at it), and playing video
         games. I sometimes write code too!
       </p>
+      <h1 className="mt-4 text-2xl font-black">Technical Skills</h1>
+      <p>
+        Languages:{" "}
+        <span className="text-muted-foreground">
+          Javascript/HTML/CSS, Typescript, Go, Java, C++, Dart, Ruby, Python,
+          SQL, GDScript
+        </span>
+      </p>
+      <p>
+        Frameworks & Libraries:{" "}
+        <span className="text-muted-foreground">
+          React, React-Native, Node.js, Next.js, Ruby on Rails, Flutter, Expo,
+          JUnit, Jest, Stripe
+        </span>
+      </p>
+      <p>
+        Tools:{" "}
+        <span className="text-muted-foreground">
+          Git, Docker, JWT, Firebase, Google Cloud, Oracle Cloud, Microsoft
+          Azure, Selenium, Godot
+        </span>
+      </p>
       <h1 className="mt-4 text-2xl font-black">Experience</h1>
       <ExperienceEntry
         title="Explorator Labs"
