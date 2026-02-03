@@ -68,6 +68,10 @@ export default async function RootPage() {
               user-defined folder and conversation hierarchies in the database,
               enhancing data integrity and user experience
             </li>
+            <li>
+              Technologies included: React, Typescript, Next.js, Tailwindcss
+              MobX, Supabase, Azure, Stripe, Git, Docker
+            </li>
           </ul>
         </ExperienceProjectItem>
         <ExperienceProjectItem title="Circulr" date="May 2022 - Oct 2024">
@@ -78,9 +82,14 @@ export default async function RootPage() {
           <ul className="list-disc pl-4">
             <li>Lead the development of the mobile app and backed system</li>
             <li>
+              Designed and developed a REST API and an admin dashboard to access
+              important information regarding returned packaging
+            </li>
+            <li>
               Redesigned Firebase Cloud Functions to significantly enhance the
               application&apos;s overall security and robustness
             </li>
+            <li>Technologies included: Flutter, NodeJS, Firebase, Stripe</li>
           </ul>
         </ExperienceProjectItem>
         <ExperienceProjectItem
@@ -90,7 +99,8 @@ export default async function RootPage() {
           <p>
             An all-in-one platform for connecting freelancers and businesses.
             The platform offers features that include posting jobs, managing
-            projects, and chat-messaging team members.
+            projects, and chat-messaging team members. Technologies used
+            included Ruby on Rails, React, Postgres, Stripe.
           </p>
         </ExperienceProjectItem>
         <ExperienceProjectItem title="Pivot" date="Aug 2021 - Mar 2022">
@@ -114,6 +124,7 @@ export default async function RootPage() {
               Communicated with clients to provide progress updates, address
               challenges, and define next steps
             </li>
+            <li>Technologies included: React, React Native, Firebase </li>
           </ul>
         </ExperienceProjectItem>
         <ExperienceProjectItem
@@ -122,7 +133,7 @@ export default async function RootPage() {
         >
           <p>
             A marketplace-platform for booking and renting out boats.
-            Technologies used includes Ruby on Rails, React, and Stripe
+            Technologies used included Ruby on Rails, React, and Stripe.
           </p>
         </ExperienceProjectItem>
         <ExperienceProjectItem
@@ -135,14 +146,21 @@ export default async function RootPage() {
           </p>
           <ul className="list-disc pl-4">
             <li>
-              Developed an automated report generation system to export
-              community treatment data as Excel files for optimizing data
+              Developed an automated report generation system in Ruby on Rails
+              to export community treatment data to Excel, optimizing data
               analysis and reporting processes
             </li>
             <li>
+              Developed and designed new features to facilitate usage of the app
+            </li>
+            <li>
               Wrote integration tests for key features utilizing RSpec,
-              Capybara, and Selenium to ensure robust functionality and
+              Capybara, and Selenium, ensuring robust functionality and
               reliability
+            </li>
+            <li>
+              Technologies included: Ruby on Rails, React, Postgres, RSpec,
+              Capybara, Selenium
             </li>
           </ul>
         </ExperienceProjectItem>
